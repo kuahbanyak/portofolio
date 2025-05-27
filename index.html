@@ -3,13 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>My Portfolio</title>
 </head>
 <body>
-    <div class="header">
-        OK
+<!-- Header -->
+<header class="header">
+    <div class="container nav-container">
+        <div class="logo">Portfolio</div>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
-</body>
+</header>
 
-<script href =></script>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+        <h2>I'm a <span id="typed-text"></span></h2>
+        <p>Crafting digital experiences through code and design</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Projects</h2>
+            <p>Here are some of my recent works</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card web">
+                <div class="project-img" style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                <div class="project-content">
+                    <h3>Project One</h3>
+                    <p>A brief description of the project and the technologies used.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card app">
+                <div class="project-img" style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                <div class="project-content">
+                    <h3>Project Two</h3>
+                    <p>A brief description of the project and the technologies used.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card design">
+                <div class="project-img" style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                <div class="project-content">
+                    <h3>Project Three</h3>
+                    <p>A brief description of the project and the technologies used.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>© 2023 My Portfolio. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/logic.js"></script>
+</body>
 </html>
