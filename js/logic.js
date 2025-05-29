@@ -10,10 +10,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    document.addEventListener('click', function(event) {
+        const nav = document.querySelector('.nav');
+        const mobileToggle = document.querySelector('.mobile-toggle');
+
+        // If menu is open and click is outside the menu and toggle button
+        if (
+            nav.classList.contains('active') &&
+            !nav.contains(event.target) &&
+            !mobileToggle.contains(event.target)
+        ) {
+            nav.classList.remove('active');
+        }
+    });
     // Typing effect for hero section
     const typedTextElement = document.getElementById('typed-text');
     if (typedTextElement) {
-        const texts = ['Developer', 'Designer', 'Creator'];
+        const texts = ['Junior Software Developer', 'Junior Full Stack Developer', 'Mid BackEnd Developer'];
         let textIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
