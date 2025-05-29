@@ -160,6 +160,31 @@ section {
     color: var(--primary);
 }
 
+.skill-card {
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.skill-card h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+.skill-card p {
+    margin: 0;
+    color: var(--secondary);
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.skill-logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
 /* Footer */
 footer {
     background: var(--dark);
@@ -176,4 +201,48 @@ footer {
     color: white;
     margin: 0 10px;
     font-size: 1.5rem;
+}
+
+/* Hamburger Menu Button */
+.mobile-toggle {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 101; /* Ensure it stays above other elements */
+}
+
+/* Show the hamburger menu button on smaller screens */
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none; /* Hidden by default */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: var(--primary);
+        padding: 20px 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        opacity: 0; /* Start with invisible */
+        transform: translateY(-10px); /* Start slightly above */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    }
+
+    .nav.active {
+        display: flex; /* Show the navigation menu when active */
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+
+    .nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
 }

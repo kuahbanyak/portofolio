@@ -67,4 +67,20 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.nav');
+
+    mobileToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+    const navLinks = document.querySelectorAll('.nav a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Check if nav menu is active (mobile view)
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            }
+        });
+    });
 });
