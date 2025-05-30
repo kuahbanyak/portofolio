@@ -16,7 +16,7 @@ This repository contains the source code for my personal portfolio website. The 
 - Responsive Design
 
 ## Live Demo
-Visit the live website at [https://alwiaziz.github.io/portfolio](https://alwiaziz.github.io/portfolio)
+Visit the live website at [https://kuahbanyak.github.io/portofolio/](https://kuahbanyak.github.io/portofolio/)
 
 ## Contact
-Feel free to reach out to me at alwi.aziz@example.com or connect with me on [LinkedIn](https://www.linkedin.com/in/muhammad-alwi-aziz).
+Feel free to reach out to me at malwiazizbusiness@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/muhammadalwiaziz/).
