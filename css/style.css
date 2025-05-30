@@ -431,6 +431,15 @@ section h2.section-title::after {
 
 /* Footer */
 footer {
+    background: rgba(32, 48, 25, 0.98); /* Footer lebih gelap */
+    color: #adb5bd; /* Warna teks footer */
+    text-align: center;
+    padding: 40px 0; /* Padding footer */
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
     background: #212529; /* Footer lebih gelap */
     color: #adb5bd; /* Warna teks footer */
     text-align: center;
