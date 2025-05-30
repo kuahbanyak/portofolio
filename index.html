@@ -1,159 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya - Muhammad Alwi Aziz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>My Portfolio</title>
 </head>
 <body>
 <!-- Header -->
-<header class="header">
-    <div class="container nav-container">
-        <div class="logo">Portfolio</div>
-        <button class="mobile-toggle">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+<header id="header">
+    <nav class="container">
+        <a href="#" class="logo"><img src="assets/MAA.PNG" alt="logo" class="websitelogo" >MAA</a>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Beranda</a></li>
+            <li><a href="#about" class="nav-link">Tentang Saya</a></li>
+            <li><a href="#projects" class="nav-link">Proyek</a></li>
         </ul>
-    </div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 </header>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="container hero-content">
-        <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-        <h2>I'm a <span id="typed-text"></span></h2>
-        <p>Crafting digital experiences through code and design</p>
-        <a href="#projects" class="btn">View My Work</a>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects">
-    <div class="container">
-        <div class="section-title">
-            <h2>My Projects</h2>
-            <p>Here are some of my recent works</p>
+<main>
+    <section id="hero" class="container">
+        <div class="hero-content">
+            <h1>Halo, saya
+                <p> <span class="highlight">MUHAMMAD ALWI AZIZ</span></p>
+            </h1>
+            <p class="subtitle">BackEnd Developer | Software Engineer Enthusiast</p>
+            <p class="hero-description">Saya adalah seorang BackEnd Developer yang bersemangat dan berdedikasi dengan pengalaman dalam menciptakan solusi digital yang inovatif dan ramah pengguna. Saya selalu antusias untuk belajar dan berkolaborasi dalam proyek-proyek yang menantang dan berdampak.</p>
+            <div class="hero-social-links" style="margin-bottom: 35px;">
+                <a href="https://www.linkedin.com/in/muhammadalwiaziz/" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.png" alt="LinkedIn" style="border-radius: 4px; vertical-align: middle; height: 40px ; width: 40px" ></a>
+                <a href="https://github.com/kuahbanyak" target="_blank" aria-label="GitHub"><img src="assets/github.png" alt="GitHub" style="border-radius: 4px; vertical-align: middle;height: 40px ; width: 40px"></a>
+                <a href="https://www.instagram.com/alwiuse1/" target="_blank" aria-label="Instagram"><img src="assets/instagram.png" alt="Instagram" style="border-radius: 4px; vertical-align: middle;height: 40px ; width: 40px"></a>
+            </div>
+            <a href="#projects" class="cta-button">Lihat Karya Saya</a>
         </div>
+    </section>
 
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card web">
-                <div class="project-img" style="background-image: url('https://via.placeholder.com/300x200')"></div>
+    <section id="about" class="container"> <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://placehold.co/380x420/E0E7FF/4F46E5?text=Foto+Profil+Keren+Anda" alt="Foto Profil Muhammad Alwi Aziz">
+            </div>
+            <div class="about-text">
+                <h3>Perjalanan dan Keahlian Saya</h3>
+                <p>Dengan pengalaman lebih dari 3 tahun di industri pengembangan perangkat lunak, saya telah mengasah kemampuan dalam merancang dan mengembangkan aplikasi web dan sistem backend. Saya memiliki hasrat mendalam untuk memecahkan masalah kompleks dan mengubah ide menjadi kenyataan digital yang fungsional dan estetis.</p>
+                <p>Keahlian inti saya terletak pada pengembangan backend, arsitektur sistem, dan optimasi database, didukung oleh penguasaan teknologi modern seperti .NET Core, Node.js, dan Go. Saya adalah seorang pembelajar seumur hidup, selalu mengikuti perkembangan tren teknologi terbaru untuk memberikan solusi terbaik.</p>
+                <p>Di luar dunia kode dan pengembangan, saya gemar fotografi dan mendaki gunung, yang seringkali memberikan inspirasi baru dalam pekerjaan saya. Saya percaya bahwa kolaborasi tim yang solid dan komunikasi yang terbuka adalah kunci kesuksesan setiap proyek.</p>
+                <h4>Keahlian Utama:</h4>
+                <ul class="skills-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>C#</li>
+                    <li>.NETCore</li>
+                    <li>Node.js & Express</li>
+                    <li>Go</li>
+                    <li>CI/CD</li>
+                    <li>Git & Version Control</li>
+                    <li>Agile Methodologies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container"> <h2 class="section-title">Proyek Unggulan</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <div class="project-image-container">
+                    <img src="https://placehold.co/600x400/A5B4FC/1E3A8A?text=Proyek+Modern+1" alt="Gambar Proyek 1">
+                </div>
                 <div class="project-content">
-                    <h3>Project One</h3>
-                    <p>A brief description of the project and the technologies used.</p>
-                    <a href="#" class="btn">View Project</a>
+                    <h3>Sistem Manajemen Inventaris</h3>
+                    <p class="project-description">Sebuah aplikasi web progresif (PWA) yang dirancang untuk mengelola inventaris perusahaan dengan fitur pelacakan real-time, notifikasi stok rendah, dan laporan analitik. Fokus pada pengalaman pengguna yang mulus di berbagai perangkat dan optimasi performa.</p>
+                    <p class="project-tech"><strong>Teknologi:</strong> .NET Core, SQL Server, SignalR, Azure</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Lihat Langsung</a>
+                        <a href="#" target="_blank">Kode Sumber</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Project 2 -->
-            <div class="project-card app">
-                <div class="project-img" style="background-image: url('https://via.placeholder.com/300x200')"></div>
+            <div class="project-item">
+                <div class="project-image-container">
+                    <img src="https://placehold.co/600x400/FBCFE8/701A75?text=Desain+UI/UX+Menawan" alt="Gambar Proyek 2">
+                </div>
                 <div class="project-content">
-                    <h3>Project Two</h3>
-                    <p>A brief description of the project and the technologies used.</p>
-                    <a href="#" class="btn">View Project</a>
+                    <h3>Redesain Platform E-commerce TokoKita</h3>
+                    <p class="project-description">Studi kasus perancangan ulang antarmuka pengguna (UI) dan pengalaman pengguna (UX) untuk platform e-commerce TokoKita, meningkatkan konversi sebesar 35% dan kepuasan pengguna dari 3.2 menjadi 4.7/5.</p>
+                    <p class="project-tech"><strong>Alat:</strong> Figma, Adobe XD, User Research, A/B Testing</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Lihat Studi Kasus</a>
+                        <a href="#" target="_blank">Prototype Interaktif</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Project 3 -->
-            <div class="project-card design">
-                <div class="project-img" style="background-image: url('https://via.placeholder.com/300x200')"></div>
+            <div class="project-item">
+                <div class="project-image-container">
+                    <img src="https://placehold.co/600x400/D1FAE5/059669?text=Aplikasi+Mobile+Keren" alt="Gambar Proyek 3">
+                </div>
                 <div class="project-content">
-                    <h3>Project Three</h3>
-                    <p>A brief description of the project and the technologies used.</p>
-                    <a href="#" class="btn">View Project</a>
+                    <h3>TaskMaster: Aplikasi Mobile Produktivitas</h3>
+                    <p class="project-description">Pengembangan aplikasi mobile cross-platform menggunakan Flutter untuk membantu pengguna mengatur jadwal, melacak tugas, dan meningkatkan produktivitas harian. Fitur unggulan termasuk sinkronisasi cloud, pengingat cerdas, dan analisis produktivitas.</p>
+                    <p class="project-tech"><strong>Teknologi:</strong> Flutter, Dart, Firebase, Google Cloud Functions</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Demo Aplikasi</a>
+                        <a href="#" target="_blank">Play Store (Soon)</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Skills Section -->
-<section id="skills">
-    <div class="container">
-        <div class="section-title">
-            <h2>My Skills</h2>
-            <p>Technologies I work with</p>
-        </div>
+</main>
 
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="html">
-                    <img src="assets/HTML5.svg" alt="logo" class="skill-logo">
-                </i>
-                <h3>HTML5</h3>
-            </div>
-            <div class="skill-card">
-                <i class="css">
-                    <img src="assets/CSS3.svg" alt="logo" class="skill-logo">
-                </i>
-                <h3>CSS3</h3>
-            </div>
-            <div class="skill-card">
-                <i class="js">
-                    <img src="assets/JavaScript.svg" alt="logo" class="skill-logo">
-                </i>
-                <h3>JavaScript</h3>
-            </div>
-            <div class="skill-card">
-                <i class="netcore">
-                    <img src="assets/NET%20core.svg" alt="logo" class="skill-logo">
-                </i>
-                <h3>.NETCore</h3>
-            </div>
-            <div class="skill-card">
-                <i class="node">
-                    <img src="assets/Node.js.svg" alt="logo" class="skill-logo">
-                </i>
-                <h3>NodeJs</h3>
-            </div>
-            <div class="skill-card">
-                <i class="C#">
-                    <img src="assets/C%23%20(CSharp).svg" alt="logo" class="skill-logo">
-                </i>
-                <h3>C#</h3>
-            </div>
-            <div class="skill-card">
-                <i class="git">
-                    <img src="assets/Git.svg" alt="logo" class="skill-logo">
-                </i>
-                <h3>Git</h3>
-            </div>
-            <div class="skill-card">
-                <i class="postgres">
-                    <img src="assets/PostgresSQL.svg" alt="logo" class="skill-logo">
-                </i>
-                <h3>PostgresSQL</h3>
-            </div>
-            <div class="skill-card">
-                <i class="Azure">
-                    <img src="assets/Azure%20Devops.svg" alt="logo" class="skill-logo">
-                </i>
-                <h3>AzureDevOps</h3>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
 <footer>
     <div class="container">
-        <p>© 2023 My Portfolio. All Rights Reserved.</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+        <div class="footer-social-links" style="margin-bottom: 20px;">
+            <a href="https://www.linkedin.com/in/muhammadalwiaziz/" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.png" alt="LinkedIn" style="border-radius: 4px; vertical-align: middle; height: 40px ; width: 40px" ></a> |
+            <a href="https://github.com/kuahbanyak" target="_blank" aria-label="GitHub"><img src="assets/github.png" alt="GitHub" style="border-radius: 4px; vertical-align: middle;height: 40px ; width: 40px"></a> |
+            <a href="https://www.instagram.com/alwiuse1/" target="_blank" aria-label="Instagram"><img src="assets/instagram.png" alt="Instagram" style="border-radius: 4px; vertical-align: middle;height: 40px ; width: 40px"></a> |
+            <a href="mailto:malwiazizbusiness@gmail.com" target="_blank" aria-label="Email"><img src="assets/gmail.png" alt="Instagram" style="border-radius: 4px; vertical-align: middle;height: 40px ; width: 40px"></a>
         </div>
+        <p>&copy; <span id="currentYear"></span> Muhammad Alwi Aziz. Dirancang dan dikembangkan dengan penuh semangat.</p>
     </div>
 </footer>
+
+<div class="scroll-to-top" title="Kembali ke atas" aria-label="Kembali ke atas">&uarr;</div>
 
 <script src="js/logic.js"></script>
 </body>
