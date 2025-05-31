@@ -1,4 +1,3 @@
-/* Reset CSS Dasar & Gaya Global */
 * {
     margin: 0;
     padding: 0;
@@ -21,8 +20,7 @@ body {
 
 /* Kontainer Utama */
 .container {
-    width: 90%;
-    max-width: 1140px; /
+    width: auto;
     margin: auto;
     padding: 0 15px; 
 }
@@ -348,7 +346,7 @@ section h2.section-title::after {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Ukuran minimum item proyek */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsif grid */
     gap: 40px;
 }
 
@@ -389,10 +387,11 @@ section h2.section-title::after {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+
 }
 
 .project-item h3 {
-    font-size: 1.6rem; /* Judul proyek */
+    font-size: 1.6rem;
     margin-bottom: 12px;
     color: #0062cc;
     font-weight: 700;
@@ -405,7 +404,7 @@ section h2.section-title::after {
     flex-grow: 1;
 }
 .project-item .project-tech {
-    font-size: 0.9rem; /* Teknologi yang digunakan */
+    font-size: 0.9rem;
     color: #6c757d;
     margin-bottom: 25px;
 }
@@ -427,15 +426,6 @@ section h2.section-title::after {
 }
 .project-links a i {
     margin-right: 6px;
-}
-
-/* Footer */
-footer {
-    background: rgba(32, 48, 25, 0.98); 
-    color: #adb5bd; /* Warna teks footer */
-    text-align: center;
-    padding: 40px 0; /* Padding footer */
-    font-size: 0.95rem;
 }
 
 /* Footer */
@@ -556,7 +546,6 @@ footer p {
     }
 
     .about-container {
-        flex-direction: column;
         text-align: center;
     }
     .about-image {
