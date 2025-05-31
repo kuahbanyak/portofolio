@@ -20,7 +20,8 @@ body {
 
 /* Kontainer Utama */
 .container {
-    width: auto;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     padding: 0 15px; 
 }
@@ -346,7 +347,8 @@ section h2.section-title::after {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsif grid */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    margin: 0 auto;
     gap: 40px;
 }
 
