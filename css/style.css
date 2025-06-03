@@ -148,11 +148,11 @@ nav ul li a.active::after {
 
 /* Bagian Utama (Main Content) */
 main {
-    padding-top: 120px; 
+    padding-top: 120px;
 }
 
 section {
-    padding: 90px 0; 
+    padding: 90px 0;
     min-height: auto; 
     display: flex;
     flex-direction: column;
@@ -166,7 +166,7 @@ section:nth-child(odd) { transition-delay: 0.1s; }
 section:nth-child(even) { transition-delay: 0.2s; }
 
 
-#about, #projects {
+#about, #projects ,#experience {
     margin-bottom: 30px; 
 }
 
@@ -192,8 +192,8 @@ section h2.section-title::after {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px; /* Garis bawah lebih panjang */
-    height: 5px; /* Garis bawah lebih tebal */
+    width: 100px;
+    height: 5px;
     background-color: #0062cc;
     border-radius: 3px;
 }
@@ -203,9 +203,9 @@ section h2.section-title::after {
 #hero {
     text-align: center;
     background-color: #fdfdff;
-    min-height: 90vh; /* Memastikan hero section memenuhi layar */
+    min-height: 100vh;
     display: flex;
-    align-items: center; /* Vertikal tengah */
+    align-items: center;
 }
 
 .hero-content {
@@ -214,7 +214,7 @@ section h2.section-title::after {
 }
 
 .hero-content h1 {
-    font-size: 4rem; /* Judul utama sangat besar */
+    font-size: 4rem;
     margin-bottom: 20px;
     font-weight: 800;
     color: #212529;
@@ -273,6 +273,7 @@ section h2.section-title::after {
 /* About Section */
 #about {
     background-color: #ffffff;
+    padding: 60px 0;
 }
 
 .about-container {
@@ -341,16 +342,14 @@ section h2.section-title::after {
 
 #experience{
     background-color: #f3f4f6;
+    padding: 60px 0;
 }
 .section-title {
     font-size: 2.25rem;
     font-weight: 700;
     text-align: center;
     color: #1f2937;
-    margin-bottom: 4rem;
-}
-.section-title .highlight {
-    color: #2563eb;     /* text-blue-600 */
+    margin-bottom: 40px;
 }
 .timeline-wrapper {
     position: relative;
@@ -468,7 +467,8 @@ section h2.section-title::after {
 
 /* Projects Section */
 #projects {
-    background-color: #f8f9fc; 
+    background-color: #f8f9fc;
+    padding: 60px 0;
 }
 
 .project-grid {
@@ -740,8 +740,6 @@ footer p {
     }
     section h2.section-title {
         font-size: 2rem;
-        margin-bottom: 40px;
-        padding-bottom: 15px;
     }
     section h2.section-title::after {
         width: 80px;
