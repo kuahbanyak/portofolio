@@ -178,10 +178,10 @@ section.visible {
 
 section h2.section-title {
     text-align: center;
-    font-size: 3rem; /* Judul lebih besar */
-    margin-bottom: 60px; /* Jarak bawah lebih besar */
-    color: #212529; /* Warna judul lebih gelap */
-    font-weight: 800; /* Lebih tebal */
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: #212529;
+    font-weight: 800;
     position: relative;
     padding-bottom: 20px;
     letter-spacing: -0.5px;
@@ -339,6 +339,132 @@ section h2.section-title::after {
     transform: translateY(-2px);
 }
 
+#experience{
+    background-color: #f3f4f6;
+}
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 4rem;
+}
+.section-title .highlight {
+    color: #2563eb;     /* text-blue-600 */
+}
+.timeline-wrapper {
+    position: relative;
+}
+.timeline-line-element {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #e5e7eb;
+    transform: translateX(-50%);
+    display: none;
+}
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+}
+.timeline-dot-element {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #3b82f6; /* blue-500 */
+    transform: translateX(-50%);
+    z-index: 10;
+    border: 3px solid white;
+}
+.timeline-content-box {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl (Tailwind's shadow-xl is a bit stronger, this is closer to shadow-lg) */
+    transition: box-shadow 0.3s ease-in-out; /* transition-shadow duration-300 ease-in-out */
+    width: 100%; /* Default for mobile */
+}
+.timeline-content-box:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* hover:shadow-2xl (Tailwind's shadow-2xl) */
+}
+.timeline-item.align-left .timeline-content-box::before,
+.timeline-item.align-right .timeline-content-box::before {
+    content: '';
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.timeline-item.align-left .timeline-content-box::before { /* Was .timeline-item-left */
+    right: -10px;
+    border-left: 10px solid white;
+}
+.timeline-item.align-right .timeline-content-box::before { /* Was .timeline-item-right */
+    left: -10px;
+    border-right: 10px solid white;
+}
+.timeline-content-box h3 {
+    font-size: 1.5rem;   /* text-2xl */
+    font-weight: 600;    /* font-semibold */
+    color: #2563eb;      /* text-blue-600 */
+    margin-bottom: 0.5rem;/* mb-2 */
+}
+
+/* Content Box - Paragraphs */
+.timeline-content-box .meta-info {
+    font-size: 0.875rem; /* text-sm */
+    color: #6b7280;      /* text-gray-500 */
+    margin-bottom: 0.25rem;/* mb-1 */
+}
+.timeline-content-box .date-range {
+    font-size: 0.875rem; /* text-sm */
+    color: #6b7280;      /* text-gray-500 */
+    margin-bottom: 0.75rem;/* mb-3 */
+}
+
+/* Content Box - List */
+.timeline-content-box ul {
+    list-style-type: disc;    /* list-disc */
+    list-style-position: inside; /* list-inside */
+    color: #374151;          /* text-gray-700 */
+    font-size: 0.875rem;      /* text-sm */
+    line-height: 1.25rem;
+}
+.timeline-content-box ul li + li {
+    margin-top: 0.25rem; /* space-y-1 */
+}
+.skill-tags {
+    margin-top: 1rem; /* mt-4 */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;      /* gap-2 */
+}
+.skill-tag {
+    padding: 0.25rem 0.75rem; /* py-1 px-3 */
+    border-radius: 9999px;  /* rounded-full */
+    font-size: 0.75rem;     /* text-xs */
+    font-weight: 500;       /* font-medium */
+    line-height: 1rem;
+}
+.skill-tag.react { background-color: #dbeafe; color: #1d4ed8; }
+.skill-tag.nodejs { background-color: #d1fae5; color: #047857; }
+.skill-tag.tailwind { background-color: #fef3c7; color: #b45309; } /* Note: Tailwind is removed, but class kept for example */
+.skill-tag.leadership { background-color: #ede9fe; color: #6d28d9; }
+.skill-tag.php { background-color: #fee2e2; color: #b91c1c; }
+.skill-tag.laravel { background-color: #e0e7ff; color: #4338ca; }
+.skill-tag.vuejs { background-color: #fce7f3; color: #be185d; }
+.skill-tag.ecommerce { background-color: #f3f4f6; color: #374151; }
+.skill-tag.python { background-color: #ccfbf1; color: #0d9488; } /* Teal */
+.skill-tag.django { background-color: #ffedd5; color: #c2410c; } /* Orange */
+.skill-tag.javascript { background-color: #cffafe; color: #0e7490; } /* Cyan */
+.skill-tag.git { background-color: #ecfccb; color: #4d7c0f; } /* Lime */
 
 /* Projects Section */
 #projects {
@@ -526,27 +652,21 @@ footer p {
     nav ul li a:hover, nav ul li a.active {
         background-color: rgba(0, 98, 204, 0.08); /* Latar hover di mobile */
     }
-
-
     .menu-toggle {
         display: flex;
     }
-
     main {
         padding-top: 100px;
     }
-
     section {
         padding: 70px 0;
     }
-
     .hero-content h1 {
         font-size: 2.8rem;
     }
     .hero-content .subtitle {
         font-size: 1.3rem;
     }
-
     .about-container {
         text-align: center;
     }
@@ -566,6 +686,43 @@ footer p {
 
     .project-grid {
         grid-template-columns: 1fr;
+    }
+    .timeline-line-element {
+        left: 20px;
+        transform: translateX(0);
+        display: block; /* Ensure line is visible on mobile */
+    }
+    .timeline-dot-element {
+        left: 20px;
+        transform: translateX(-50%);
+    }
+    .timeline-item {
+        /* display: block; Ensure it's block, not flex */
+        padding-left: 30px; /* Space for content to the right of the line, reduced from 40px */
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    .timeline-content-box {
+        width: 100%; /* Full width on mobile */
+        text-align: left !important; /* Override md:text-right */
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .timeline-item.align-left .timeline-content-box::before,
+    .timeline-item.align-right .timeline-content-box::before {
+        left: -10px; /* Arrow points left */
+        right: auto;
+        border-left: none;
+        border-right: 10px solid white;
+    }
+    .timeline-item.align-left .timeline-content-box ul,
+    .timeline-item.align-right .timeline-content-box ul {
+        text-align: left !important;
+        list-style-type: disc !important; /* Ensure bullets are visible */
+    }
+    .timeline-item.align-left .skill-tags,
+    .timeline-item.align-right .skill-tags {
+        justify-content: flex-start !important;
     }
 }
 
@@ -593,3 +750,35 @@ footer p {
     .project-item h3 { font-size: 1.4rem; }
     .project-item .project-description { font-size: 0.9rem; }
 }
+@media (min-width: 768px) {
+    .timeline-item {
+        display: flex;
+    }
+    .timeline-item.align-right {
+        justify-content: flex-end;
+    }
+    .timeline-item.align-left {
+        justify-content: flex-start;
+    }
+    .timeline-line-element {
+        display: block;
+    }
+    .timeline-content-box {
+        width: 41.666667%; /* w-5/12 */
+    }
+    .timeline-item.align-left .timeline-content-box {
+        text-align: right;
+    }
+    .timeline-item.align-left .timeline-content-box ul { /* If item is left, content is on right, so list text is right */
+        text-align: right; /* This aligns the text inside li, but not the bullet points if list-style-position is inside */
+        list-style-type: none; /* md:list-none */
+    }
+    /* For right aligned text, ensure list items are also aligned */
+    .timeline-item.align-left .timeline-content-box ul li {
+        text-align: right;
+    }
+    .timeline-item.align-left .skill-tags {
+        justify-content: flex-end; /* md:justify-end for left-aligned items */
+    }
+}
+
